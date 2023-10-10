@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slider-container {
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider img {
+    width: 400px;
+    object-fit: cover;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.product-description img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+.features, .application, .quality-reliability, .package-reviews, .price-warranty, .order-now {
+    margin-top: 20px;
+    width: 70%;
+}
+
+.features h2, .application h2, .quality-reliability h2, .package-reviews h2, .price-warranty h2 {
+    color: #333;
+}
+
+.features h3, .application h3 {
+    color: #0066cc;
+}
+
+.package-reviews blockquote {
+    font-style: italic;
+    border-left: 2px solid #333;
+    padding-left: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer {
+    margin-top: 30px;
+    text-align: center;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .features, .application, .quality-reliability, .package-reviews, .price-warranty, .order-now {
+        width: 100%;
+    }
+}
