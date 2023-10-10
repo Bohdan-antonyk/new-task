@@ -4,6 +4,12 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+}
+
+li {
+    list-style: initial;
+    margin-left: 25px;
 }
 
 .slider-container {
@@ -38,17 +44,41 @@ header {
     margin-top: 10px;
 }
 
-.features, .application, .quality-reliability, .package-reviews, .price-warranty, .order-now {
-    margin-top: 20px;
-    width: 70%;
+h2,h3 {
+    text-align: center;
 }
-
-.features h2, .application h2, .quality-reliability h2, .package-reviews h2, .price-warranty h2 {
-    color: #333;
+.features {
+    width: 80%;
 }
-
 .features h3, .application h3 {
-    color: #0066cc;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+h3 ul {
+    margin-bottom: 20px;
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*table {*/
+/*    margin-bottom: 50px;*/
+/*    margin-top: 5px;*/
+/*    text-align: center;*/
+/*    width: 100%;*/
+/*}*/
+/*tr {*/
+/*    display: flex;*/
+/*    justify-content: space-around;*/
+/*}*/
+
+td {
+    margin-left: 50px;
 }
 
 .package-reviews blockquote {
@@ -66,6 +96,56 @@ footer {
     margin-top: 30px;
     text-align: center;
     color: #666;
+}
+
+.price {
+    position: absolute;
+    top: 625px;
+    right: 200px;
+    width: 300px;
+    height: 70px;
+    border-radius: 15px;
+    background-color: tomato;
+    font-size: 24px;
+    color: white;
+    border: none;
+    opacity: 0.75;
+}
+
+.trimmer {
+    margin-top: 150px;
+}
+.title-trimmer {
+    margin-top: 100px;
+}
+
+.wrapper-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.wrapper-img img {
+    width: 450px;
+}
+
+.second-benefits {
+    margin: 0 auto;
+}
+
+.price-second {
+    position: absolute;
+    bottom:150px;
+    right: 200px;
+    width: 300px;
+    height: 70px;
+    border-radius: 15px;
+    background-color: tomato;
+    font-size: 24px;
+    color: white;
+    border: none;
+    opacity: 0.75;
 }
 
 @media (max-width: 768px) {
